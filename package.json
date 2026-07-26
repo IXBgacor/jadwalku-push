@@ -1,0 +1,21 @@
+{
+  "name": "jadwalku-push-server",
+  "version": "1.0.0",
+  "description": "Backend Web Push untuk JadwalKu - mengirim notifikasi jadwal walau app/browser sedang tertutup.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "generate-vapid": "node generate-vapid-keys.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "web-push": "^3.6.7"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
